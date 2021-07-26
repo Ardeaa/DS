@@ -1,4 +1,6 @@
-## Project
+## Семантическая сегментация спутниковых снимков
 
-This project is based on the INRIA Aerial Image Labeling Dataset (https://project.inria.fr/aerialimagelabeling/). 
-The aim is to build an algorithm based on neural network performing semantic segmentation on buildings.
+Цель проекта – построение модели на базе сверточных нейронных сетей для распознавания застроенных территорий на спутниковых снимках различных городов.
+
+Для обучения и тестирования использовались данные из INRIA Aerial Image Labeling Dataset (https://project.inria.fr/aerialimagelabeling/). 
+
