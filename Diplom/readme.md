@@ -4,3 +4,28 @@
 
 Для обучения и тестирования использовались данные из INRIA Aerial Image Labeling Dataset (https://project.inria.fr/aerialimagelabeling/). 
 
+#### Предобработка данных
+
+Нарезаны изображения 224х224 из исходных данных. Программа **cropping.py** из каждого изображения и каждой маски вырезает квадраты, главная диагональ которых имеет следующее расположение:
+-	от (1025; 1025) px до (1249; 1249) px
+-	от (4225; 4225) px до (4449; 4449) px
+-	от (1025; 4225) px до (1249; 4449) px
+-	от (2225; 2225) px до (2449; 2449) px
+
+
+#### Ноутбуки с моделями
+1. **keras_vgg_unet.ipynb**
+2. **unet_learner_resnet34_compressed_512.ipynb** (реализовано в FastAI, ненарезанные сжатые изображения)
+3. **unet_learner_vgg16_compressed_512.ipynb** (реализовано в FastAI, ненарезанные сжатые изображения)
+4. **unet_learner_resnet34_cropped_224.ipynb** (реализовано в FastAI, нарезанные  изображения) 
+5. **unet_learner_vgg16_cropped_224.ipynb**  (реализовано в FastAI, нарезанные  изображения) 
+6. **TernausNet16.ipynb** (за основу взята модель из https://arxiv.org/pdf/1801.05746.pdf![image])
+
+#### Отчет и презентация проекта
+- SEMINA_.presentation.pdf
+- Semina_отчет.pdf
+
+
+
+
+
